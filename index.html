@@ -4,172 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leader Board</title>
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/52f994acab.js" crossorigin="anonymous"></script>
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <title>Bootstrap</title>
+
+    <!-- Bootstrap - Local Linking -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
+    
     <header>
-
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #562EFF;">
+            <div class="container">
+              <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/icons/logo.png" alt="" width="41" height="51" class="d-inline-block align-text-top">
+                <span class="ms-2">Idea</span>
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Works</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="images/icons/profile.jpg" alt="" width="51" height="51" class="d-inline-block align-text-top" style="border-radius: 50px;">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main>
-        <!-- Top Characters and Top Character Reviews -->
-        <section class="container">
-            <!-- Top Characters -->
-            <div class="top-characters">
-                <h2 class="section-title">Top Characters</h2>
-                <div class="characters">
-                    <div class="character">
-                        <img src="images/characters/character-1.png" alt="">
-                        <h3 class="character-name">Captain America</h3>
-                    </div>
-                    <div class="character">
-                        <img src="images/characters/character-2.png" alt="">
-                        <h3 class="character-name">Iron Man</h3>
-                    </div>
-                    <div class="character">
-                        <img src="images/characters/character-3.png" alt="">
-                        <h3 class="character-name">Spider Man</h3>
-                    </div>
-                    <div class="character">
-                        <img src="images/characters/character-4.png" alt="">
-                        <h3 class="character-name">Hulk</h3>
-                    </div>
-                    <div class="character">
-                        <img src="images/characters/character-5.png" alt="">
-                        <h3 class="character-name">Thor</h3>
-                    </div>
-                    <div class="character">
-                        <img src="images/characters/character-6.png" alt="">
-                        <h3 class="character-name">Hawkeye</h3>
-                    </div>
-                </div>
-            </div>
-
-            <hr>
-
-            <!-- Top Character Reviews -->
-            <div class="top-reviews">
-                <h2 class="section-title">Top Character Reviews</h2>
-                <div class="reviews">
-                    <article class="review">
-                        <div class="thumbnail">
-                            <img src="images/reviews/review-1.jpg" alt="">
-                        </div>
-                        <div class="review-info">
-                            <h3 class="review-title">Review: Iron Man</h3>
-                            <p class="review-author">By <a href="https://en.wikipedia.org/wiki/Tony_Stark_(Marvel_Cinematic_Universe)">Tony Stark</a></p>
-                        </div>
-                    </article>
-                    <article class="review">
-                        <div class="thumbnail">
-                            <img src="images/reviews/review-2.jpg" alt="">
-                        </div>
-                        <div class="review-info">
-                            <h3 class="review-title">Review: Spider Man</h3>
-                            <p class="review-author">By <a href="https://en.wikipedia.org/wiki/Peter_Parker_(Marvel_Cinematic_Universe)">Peter Parker</a></p>
-                        </div>
-                    </article>
-                    <article class="review">
-                        <div class="thumbnail">
-                            <img src="images/reviews/review-3.jpg" alt="">
-                        </div>
-                        <div class="review-info">
-                            <h3 class="review-title">Review: Captain America</h3>
-                            <p class="review-author">By <a href="https://en.wikipedia.org/wiki/Steve_Rogers_(Marvel_Cinematic_Universe)">Steve Roger</a></p>
-                        </div>
-                    </article>
-                    <article class="review">
-                        <div class="thumbnail">
-                            <img src="images/reviews/review-4.jpg" alt="">
-                        </div>
-                        <div class="review-info">
-                            <h3 class="review-title">Review: Thor</h3>
-                            <p class="review-author">By <a href="https://en.wikipedia.org/wiki/Thor_(Marvel_Cinematic_Universe)">Thor Odinson</a></p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
         
-        <!-- Latest Movies -->
-        <section class="container">
-            <h2 class="section-title">Latest Movies</h2>
-            <div class="movies">
-                <div class="movie">
-                    <div class="movie-banner">
-                        <img src="images/movies/movie-1.jpg" alt="">
-                    </div>
-                    <div class="movie-detail">
-                        <h3 class="movie-title">Avengers: Engame</h3>
-                        <p class="movie-author">Russo Brothers</p>
-                        <div class="movie-info">
-                            <div>
-                                <i class="fa-solid fa-star filled"></i>
-                                <i class="fa-solid fa-star filled"></i>
-                                <i class="fa-solid fa-star filled"></i>
-                                <i class="fa-solid fa-star filled"></i>
-                                <i class="fa-solid fa-star empty"></i>
-                            </div>
-                            <span>4.0</span>
-                            <div class="movie-duration">
-                                <i class="fa-solid fa-clock"></i>
-                                <span>03.20hr</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="movie">
-                    <div class="movie-banner">
-                        <img src="images/movies/movie-2.jpg" alt="">
-                    </div>
-                    <div class="movie-detail">
-                        <h3 class="movie-title">Avengers: Infinity War</h3>
-                        <p class="movie-author">Russo Brothers</p>
-                        <div class="movie-info">
-                            <div>
-                                <i class="fa-solid fa-star filled"></i>
-                                <i class="fa-solid fa-star filled"></i>
-                                <i class="fa-solid fa-star filled"></i>
-                                <i class="fa-solid fa-star filled"></i>
-                                <i class="fa-solid fa-star filled"></i>
-                            </div>
-                            <span>5.0</span>
-                            <div class="movie-duration">
-                                <i class="fa-solid fa-clock"></i>
-                                <span>02.29hr</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="movie">
-                    <div class="movie-banner">
-                        <img src="images/movies/movie-3.jpg" alt="">
-                    </div>
-                    <div class="movie-detail">
-                        <h3 class="movie-title">Avengers: Age of Ultron</h3>
-                        <p class="movie-author">Joss Whedon</p>
-                        <div class="movie-info">
-                            <div>
-                                <i class="fa-solid fa-star filled"></i>
-                                <i class="fa-solid fa-star filled"></i>
-                                <i class="fa-solid fa-star filled"></i>
-                                <i class="fa-solid fa-star empty"></i>
-                                <i class="fa-solid fa-star empty"></i>
-                            </div>
-                            <span>3.0</span>
-                            <div class="movie-duration">
-                                <i class="fa-solid fa-clock"></i>
-                                <span>02.21hr</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
+    
+    <footer>
+        
+    </footer>
+    
+    <!-- Bootstrap - Local Linking -->
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
